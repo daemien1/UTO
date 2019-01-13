@@ -1,0 +1,19 @@
+
+
+<p>
+  <strong>Title:</strong>
+  <%= @story.title %>
+</p>
+
+<p>
+  <strong>Mainstory:</strong>
+  <%= @story.mainstory %>
+</p>
+
+<p>
+  <strong>Storyteller:</strong>
+  <%= @story.storyteller.email %>
+</p>
+
+<%= link_to 'Edit', edit_story_path(@story) %> |
+<%= link_to 'Back', stories_path %>

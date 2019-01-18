@@ -1,9 +1,13 @@
-<h1>Story#home</h1>
-<% if current_storyteller %>
-  <%= link_to "Sign Out", destroy_storyteller_session_path, method: :delete %>
-<% else %>
-  <%= link_to "Sign In", new_storyteller_session_path%>
-  <%= link_to "Sign Up",  new_storyteller_registration_path %>
-<% end %>
+<div class="container">
+  <h1>See all </h1>
+  
+  <% if current_storyteller %>
+    <%= link_to "Sign Out", destroy_storyteller_session_path, method: :delete %>
+  <% else %>
+    <%= link_to "Sign In", new_storyteller_session_path%>
+    <%= link_to "Sign Up",  new_storyteller_registration_path %>
+  <% end %>
 
-<%= link_to "Stories", stories_path %>
+  <%= link_to "Stories", stories_path %>
+
+</div>

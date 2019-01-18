@@ -1,19 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-04"><p>
+      <strong>Title:</strong>
+      <%= @story.title %>
+    </p></div>
+    <div class="col-md-04">
+    <p>
+      <strong>Mainstory:</strong>
+      <%= @story.mainstory %>
+    </p>
+  </div>
+    <div class="col-md-04">
+    <p>
+      <strong>Storyteller:</strong>
+      <%= @story.storyteller.email %>
+    </p>
+  </div>
+</div>
 
 
-<p>
-  <strong>Title:</strong>
-  <%= @story.title %>
-</p>
 
-<p>
-  <strong>Mainstory:</strong>
-  <%= @story.mainstory %>
-</p>
 
-<p>
-  <strong>Storyteller:</strong>
-  <%= @story.storyteller.email %>
-</p>
+</div>
+
+
 
 <%= link_to 'Edit', edit_story_path(@story) %> |
 <%= link_to 'Back', stories_path %>
